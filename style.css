@@ -269,6 +269,9 @@ body {
     height: 100%;
     background: transparent;
     transition: 3s;
+    animation: minipActiveHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events:none;
 }
 
 .home-imgHover:hover {
@@ -294,5 +297,11 @@ body {
 @keyframes showRight {
     100%{
         width: 0;
+    }
+}
+
+@keyframes minipActiveHover {
+    100%{
+        pointer-events:auto;
     }
 }
